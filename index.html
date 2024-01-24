@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simple Calculator</title>
+    <script
+      src="https://kit.fontawesome.com/96f2710bac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator__display">
+        <div class="toggle__wrapper">
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+          <p class="toggle__action">switch to light</p>
+        </div>
+
+        <div class="input__wrapper">
+          <input type="text" id="display" placeholder="0" />
+          <p id="result" class="result"></p>
+        </div>
+      </div>
+
+      <div class="icons__wrapper">
+        <div>
+          <i class="fa-regular fa-clock"></i>
+          <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+        <div>
+          <a href="" onclick="removeValue(event)">
+            <i class="fa-solid fa-delete-left"></i>
+          </a>
+        </div>
+      </div>
+      <div class="buttons__wrapper">
+        <input type="button" onclick="clearInputField()" id="C" value="C" />
+        <input
+          type="button"
+          onclick="addInputValue('()')"
+          id="paranthesis"
+          value="()"
+        />
+        <input
+          type="button"
+          onclick="addInputValue('%')"
+          id="percentage"
+          value="%"
+        />
+        <input
+          type="button"
+          onclick="addInputValue('/')"
+          id="divide"
+          value="/"
+        />
+        <input
+          type="button"
+          onclick="addInputValue('7')"
+          id="seven"
+          value="7"
+        />
+        <input
+          type="button"
+          onclick="addInputValue('8')"
+          id="eight"
+          value="8"
+        />
+        <input type="button" onclick="addInputValue('9')" id="nine" value="9" />
+        <input
+          type="button"
+          onclick="addInputValue('*')"
+          id="multiply"
+          value="*"
+        />
+        <input type="button" onclick="addInputValue('6')" id="six" value="6" />
+        <input type="button" onclick="addInputValue('5')" id="five" value="5" />
+        <input type="button" onclick="addInputValue('4')" id="four" value="4" />
+        <input
+          type="button"
+          onclick="addInputValue('-')"
+          id="minus"
+          value="-"
+        />
+        <input
+          type="button"
+          onclick="addInputValue('3')"
+          id="three"
+          value="3"
+        />
+        <input type="button" onclick="addInputValue('2')" id="two" value="2" />
+        <input type="button" onclick="addInputValue('1')" id="one" value="1" />
+        <input type="button" onclick="addInputValue('+')" id="plus" value="+" />
+        <input
+          type="button"
+          onclick="addInputValue('+/-')"
+          id="plusMinus"
+          value="+/-"
+        />
+        <input type="button" onclick="addInputValue('0')" id="zero" value="0" />
+        <input
+          type="button"
+          onclick="addInputValue('.')"
+          id="decimal"
+          value="."
+        />
+        <input type="button" onclick="finalResult()" value="=" />
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
